@@ -77,18 +77,6 @@ html {
   font-size: 3.5vw;
 }
 
-#april {
-  background-color: red;
-}
-
-#may {
-  background-color: green;
-}
-
-#june {
-  background-color: blue;
-}
-
 @media (max-width: 600px) {
   #nav {
     height: 3vh;
