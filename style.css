@@ -1,1 +1,116 @@
+html {
+  height: 100%;
+  width: 100%;
+}
 
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+#nav-wrapper {
+  top: 0;
+  z-index: 999;
+  position: sticky;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  background-color: white;
+}
+
+#nav {
+  height: 5vh;
+  padding-top: 2.5vh;
+  padding-bottom: 2.5vh;
+  border-bottom: 0.75vh solid black;
+}
+
+#nav a {
+  color: black;
+  font-size: 5.5vh;
+  padding: 2.5vh;
+  font-family: Calibri;
+  text-decoration: none;
+}
+
+#nav #nhd {
+  display: inline;
+  float: right;
+}
+
+.section {
+  height: 100vh;
+  width: 100%;
+}
+
+.text-centered{
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.position-relative{
+  left: 50%;
+  font-size: 5vh;
+  font-family: Calibri;
+  text-align: center;
+  position: relative;
+  transform: translate(-50%, 0);
+}
+
+#home {
+  margin-top: -10vh;
+  background-color: white;
+}
+
+#home #home-title{
+  text-align: center;
+  font-family: Calibri
+}
+
+#home #home-title #home-title-text{
+  font-size: 6vw;
+}
+
+#home #home-title #home-title-caption{
+  font-size: 3.5vw;
+}
+
+#april {
+  background-color: red;
+}
+
+#may {
+  background-color: green;
+}
+
+#june {
+  background-color: blue;
+}
+
+@media (max-width: 600px) {
+  #nav {
+    height: 3vh;
+    text-align: center;
+  }
+
+  #nav a {
+    font-size: 3vh;
+    padding: 1.5vh;
+  }
+
+  #nav #nhd {
+    float: none;
+  }
+
+  #home #home-title #home-title-text{
+    font-size: 6vh;
+    font-family: Calibri;
+  }
+
+  #home #home-title #home-title-caption{
+    font-size: 3vh;
+    font-family: Calibri;
+  }
+}
