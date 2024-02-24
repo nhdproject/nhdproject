@@ -189,7 +189,6 @@ html {
 }
 
 #may-{
-  height: 100vh;
   color: black;
 }
 
@@ -217,7 +216,7 @@ html {
 }
 
 .junedivider{
-  margin-top: -27.5vh;
+  margin-top: -25vh;
   width: 100vw;
   background-color: white;
 }
