@@ -1,6 +1,7 @@
 html {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 * {
@@ -10,16 +11,20 @@ html {
 
 #nav-wrapper {
   top: 0;
+  left: 50%;
   z-index: 999;
-  position: sticky;
+  transform: translate(-50%, 0);
+  position: fixed;
+  background-color: white;
   padding-left: 2.5vw;
   padding-right: 2.5vw;
-  background-color: white;
 }
 
 #nav {
-  height: 5vh;
+  width: 90vw;
   padding-top: 2.5vh;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
   padding-bottom: 2.5vh;
   border-bottom: 0.75vh solid black;
 }
@@ -27,7 +32,7 @@ html {
 #nav a {
   color: black;
   font-size: 5.5vh;
-  padding: 2.5vh;
+  padding: 1vw;
   font-family: Calibri;
   text-decoration: none;
 }
@@ -37,8 +42,12 @@ html {
   float: right;
 }
 
+#nav a:hover{
+  transition: 0.25s;
+  color: #c7c7c7;
+}
+
 .section {
-  height: 100vh;
   width: 100%;
 }
 
@@ -54,45 +63,240 @@ html {
   left: 50%;
   font-size: 5vh;
   font-family: Calibri;
-  text-align: center;
   position: relative;
   transform: translate(-50%, 0);
 }
 
 #home {
-  margin-top: -10vh;
   background-color: white;
+  display: block;
+  text-align: center;
+  height: 87.5vh;
 }
 
 #home #home-title{
-  text-align: center;
-  font-family: Calibri
+  text-align: left;
+  font-family: Calibri;
 }
 
 #home #home-title #home-title-text{
-  font-size: 6vw;
+  padding-top: 2.5vh;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-bottom: 2.5vh;
+  overflow: hidden;
+}
+
+#home #home-title #home-title-text-text{
+  height: 45vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#home #home-title #home-title-title{
+  font-size: 4vw;
 }
 
 #home #home-title #home-title-caption{
-  font-size: 3.5vw;
+  margin-left: 0.5vw;
+  font-size: 2.5vw;
+}
+
+#home #home-title #home-title-picture{
+  height: 45vh;
+  width: 35vw;
+  float: right;
+  border-radius: 2.5vw;
+  margin-left: 1vw;
+}
+
+.paragraph{
+  text-indent: 5vw;
+}
+
+.margin-top-25vh{
+  margin-top: 2.5vh;
+}
+
+.header{
+  margin-left: 2vw;
+  font-size: 4vw;
+  font-family: Calibri;
+}
+
+.divider{
+  height: 12.5vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.paragraph::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+.paragraph::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 2.5vw;
+}
+
+.paragraph::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+#april-{
+  color: black;
+  height: 100vh;
+}
+
+#april-text{
+  padding-top: 2.5vh;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-bottom: 2.5vh;
+  font-size: 2vw;
+}
+
+#april-paragraph-1{
+  height: 40vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#april-paragraph-2{
+  height: 35vh;
+  overflow: auto;
+}
+
+#april-picture-1{
+  object-fit: cover;
+  height: 40vh;
+  width: 30vw;
+  float: left;
+  border-radius: 2.5vw;
+  margin-bottom: 2.5vh;
+  margin-right: 2.5vw;
+}
+
+#april-picture-2{
+  object-fit: cover;
+  height: 35vh;
+  width: 30vw;
+  float: right;
+  border-radius: 2.5vw;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  margin-left: 2.5vw;
+}
+
+#may-{
+  height: 100vh;
+  color: black;
+}
+
+#may-text{
+  padding-top: 2.5vh;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-bottom: 2.5vh;
+  font-size: 2vw;
+}
+
+#may-paragraph-1{
+  height: 40vh;
+  overflow: auto;
+}
+
+#may-picture-1{
+  object-fit: cover;
+  height: 40vh;
+  width: 35vw;
+  float: right;
+  border-radius: 2.5vw;
+  margin-bottom: 2.5vh;
+  margin-left: 2.5vw;
+}
+
+.junedivider{
+  margin-top: -27.5vh;
+  width: 100vw;
+  background-color: white;
+}
+
+#june-{
+  height: 80vh;
+  color: black;
+}
+
+#june-text{
+  padding-top: 2.5vh;
+  padding-right: 2.5vw;
+  padding-left: 2.5vw;
+  padding-bottom: 2.5vh;
+  font-size: 2vw;
+}
+
+#june-paragraph-1{
+  height: 40vh;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#june-paragraph-2{
+  height: 35vh;
+  overflow: auto;
+}
+
+#june-picture-1{
+  object-fit: cover;
+  height: 40vh;
+  width: 35vw;
+  float: left;
+  border-radius: 2.5vw;
+  margin-bottom: 2.5vh;
+  margin-right: 2.5vw;
+}
+
+#june-picture-2{
+  object-fit: cover;
+  height: 35vh;
+  width: 30vw;
+  float: right;
+  border-radius: 2.5vw;
+  margin-top: 2.5vh;
+  margin-bottom: 2.5vh;
+  margin-left: 2.5vw;
 }
 
 @media (max-width: 600px) {
   #nav {
-    height: 3vh;
     text-align: center;
   }
 
   #nav a {
     font-size: 3vh;
-    padding: 1.5vh;
+    padding: 1vh;
   }
 
   #nav #nhd {
     float: none;
   }
 
-  #home #home-title #home-title-text{
+  #home #home-title #home-title-text-text{
+    text-align: center;
+    background-image: url("https://cdn.britannica.com/66/91866-050-FFA3B03E/man-Chinese-line-tanks-Beijing-demonstrators-Tiananmen-June-5-1989.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+    color: white;
+    border-radius: 2.5vw;
+    height: 50vh;
+    width: 90vw;
+  }
+
+  #home #home-title #home-title-title{
     font-size: 6vh;
     font-family: Calibri;
   }
@@ -100,5 +304,25 @@ html {
   #home #home-title #home-title-caption{
     font-size: 3vh;
     font-family: Calibri;
+  }
+
+  #home #home-title #home-title-picture{
+    display: none;
+  }
+
+  #april-text{
+    font-size: 2vh;
+  }
+
+  #may-text{
+    font-size: 2vh;
+  }
+
+  #june-text{
+    font-size: 2vh;
+  }
+
+  .header{
+    font-size: 5vh;
   }
 }
